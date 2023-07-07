@@ -1,0 +1,28 @@
+{
+  "name": "test-vtopz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samolazoff/test-VTOPZ.git"
+  },
+  "author": "Samolazov Roman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samolazoff/test-VTOPZ/issues"
+  },
+  "homepage": "https://github.com/samolazoff/test-VTOPZ#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^9.0.0",
+    "sass": "^1.63.6"
+  }
+}
