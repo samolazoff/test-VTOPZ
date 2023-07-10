@@ -1,8 +1,9 @@
 doctype html
 html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Regitred
-    body 
+    include ../../components/head/head.pug
+    link(rel="stylesheet", href="../style/main.css")
+    body
+        .wrap.d-flex.flex-column.justify-content-center.align-items-center 
+            main.content.d-flex.flex-row.justify-content-center.align-items-center 
+                include ../../components/aside/aside.pug
+                include ../../components/link-login/link-login.pug  

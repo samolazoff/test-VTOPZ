@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+button {
+  border: none;
+}
+
 .block-title {
   min-height: 481px;
   width: 137.2px;
@@ -13,6 +17,43 @@
   color: #FFFFFF;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
+}
+
+.wrap-form {
+  min-width: 300px;
+  min-height: 481px;
+  background-image: url(../static/img/bgc-person.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.form-registration {
+  gap: 20px;
+}
+.form-registration .form-label {
+  width: 250px;
+}
+.form-registration .btn-submit {
+  width: 154px;
+  height: 32px;
+  font-size: 14px;
+  background-color: #5A61ED;
+  color: #FFFFFF;
+}
+
+.input__border {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+
+.link-login__txt {
+  font-size: 13px;
+}
+
+.link-login__link {
+  color: #5A61ED;
 }
 
 .wrap {
@@ -27,4 +68,17 @@
   max-width: 665px;
   min-height: 481px;
   background-color: #FFFFFF;
+  gap: 25px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.subtitle {
+  font-size: 14px;
+  font-weight: 300;
+  color: #111111;
 }

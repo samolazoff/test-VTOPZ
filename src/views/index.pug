@@ -5,7 +5,4 @@ html(lang="en")
         .wrap.d-flex.flex-column.justify-content-center.align-items-center 
             main.content.d-flex.flex-row.justify-content-center.align-items-center 
                 include ../components/aside/aside.pug 
-                section.wrap-form 
-                    h2.title New user? 
-                    h3.subtitle Use the form below to create your account.
-                    form(action="", method="post" class="form-registration") 
+                include ../components/form-registration/form-registration.pug 
