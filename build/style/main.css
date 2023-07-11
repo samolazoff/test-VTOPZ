@@ -9,10 +9,11 @@ button {
 
 .block-title {
   min-height: 481px;
-  width: 137.2px;
+  width: 183px;
   background-color: #5A61ED;
 }
 .block-title .logo {
+  margin: 24px 7px;
   font-size: 49px;
   color: #FFFFFF;
   writing-mode: vertical-rl;
@@ -21,6 +22,7 @@ button {
 
 .wrap-form {
   min-width: 300px;
+  width: 100%;
   min-height: 481px;
   background-image: url(../static/img/bgc-person.png);
   background-repeat: no-repeat;
@@ -31,7 +33,7 @@ button {
   gap: 20px;
 }
 .form-registration .form-label {
-  width: 250px;
+  width: 150px;
 }
 .form-registration .btn-submit {
   width: 154px;
@@ -65,8 +67,9 @@ button {
 }
 
 .content {
-  max-width: 665px;
-  min-height: 481px;
+  max-width: 666px;
+  min-height: 480px;
+  margin-top: 10px;
   background-color: #FFFFFF;
   gap: 25px;
 }
