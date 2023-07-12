@@ -1,23 +1,23 @@
 section.wrap-form 
     h2.title New user? 
     h3.subtitle Use the form below to create your account.
-    form(action="", method="post" class="row form-registration")
-        .d-flex.flex-column.justify-content-start.align-items-start.col-6.box-input
+    form(action="", method="post" class="form-registration d-flex flex-wrap justify-content-start")
+        .d-flex.flex-column.justify-content-start.align-items-start.box-input
             label(for="inputFirstName" class="label-style")  First Name
             input(type="text", name="inputFirstName" class="input__border input__type" id="inputFirstName" placeholder="Alice")
-        .d-flex.flex-column.justify-content-start.align-items-start.col-6.box-input
+        .d-flex.flex-column.justify-content-start.align-items-start.box-input
             label(for="inputLastName" class="label-style" placeholder="Miller")  Last Name
             input(type="text", name="inputLastName" class="input__border input__type" id="inputLastName"  placeholder="Miller")
-        .d-flex.flex-column.justify-content-start.align-items-start.col-6.box-input
+        .d-flex.flex-column.justify-content-start.align-items-start.box-input
             label(for="selectNationality" class="label-style")  Nationality
             select( name="selectNationality" class="input__border input__type" id="selectNationality")
                 option(value="American" selected) American 
                 option(value="Belarusian") Belarusian 
                 option(value="Rusian") Rusian
-        .d-flex.flex-column.justify-content-start.align-items-start.col-6.box-input
+        .d-flex.flex-column.justify-content-start.align-items-start.box-input
             label(for="inputEmail" class="label-style")  E-mail
             input(type="email", name="inputEmail" class="input__border input__type" id="inputEmail" placeholder="alice.miller@yahoo.com")
-        .d-flex.flex-column.justify-content-start.align-items-start.col-6.box-input
+        .d-flex.flex-column.justify-content-start.align-items-start.box-input
             label(for="inputBirth" class="label-style")  Date of Birth
             .d-flex.flex-row.justify-content-between.align-items-start.w-100
                 select( name="selectDayBirth" class="input__border input__type" id="selectDayBirth")
@@ -38,7 +38,7 @@ section.wrap-form
                             option(value=x selected) #{x}
                         else
                             option(value=x) #{x}
-        .d-flex.flex-column.justify-content-start.align-items-start.col-6.box-input.box-select-gender
+        .d-flex.flex-column.justify-content-start.align-items-start.box-input.box-select-gender
             label(for="checkGender" class="label-style")  Gender
             .d-flex.flex-row.justify-content-start.align-items-start
                 .d-flex.flex-row.justify-content-center.align-items-center
@@ -47,13 +47,13 @@ section.wrap-form
                 .d-flex.flex-row.justify-content-center.align-items-center
                     input(class="input__type" type="radio" name="checkFemale" id="checkFemale" value="Female" hidden )
                     label(for="checkFemale" class="") Female
-        .d-flex.flex-column.justify-content-start.align-items-start.col-6.box-input
+        .d-flex.flex-column.justify-content-start.align-items-start.box-input
             label(for="inputPassword" class="label-style")  Password
             input(type="password", name="inputPassword" class="input__border input__type" id="inputPassword").
-        .d-flex.flex-column.justify-content-start.align-items-start.col-6.box-input
+        .d-flex.flex-column.justify-content-start.align-items-start.box-input
             label(for="inputPasswordConfirm" class="label-style")  Confirm Password
             input(type="password", name="inputPasswordConfirm" class="input__border input__type" id="inputPasswordConfirm")
-        .d-flex.flex-column.justify-content-start.align-items-center.col-12
+        .d-flex.flex-column.justify-content-between.align-items-center.w-100
             .w-100.d-flex.justify-content-between.martop
                 include ../link-login/link-login.pug
                 button.btn-submit(type="submit") Complete Signup
