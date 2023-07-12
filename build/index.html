@@ -12,39 +12,39 @@
     <title>TEST</title>
   </head>
   <body>
-    <div class="wrap d-flex flex-column justify-content-center align-items-center"> 
-      <main class="content d-flex flex-row justify-content-center align-items-center"> 
+    <div class="wrap">
+      <main class="content d-flex">
         <aside class="block-title d-flex flex-column justify-content-end align-items-end">
           <h1 class="logo">Sign up </h1>
         </aside>
         <section class="wrap-form"> 
           <h2 class="title">New user? </h2>
           <h3 class="subtitle">Use the form below to create your account.</h3>
-          <form class="form-registration d-flex flex-row justify-content-center align-items-start flex-wrap" action="" method="post">
-            <div class="d-flex flex-column justify-content-start align-items-start">
-              <label class="form-label" for="inputFirstName"> First Name</label>
-              <input class="form-control input__border" type="text" name="inputFirstName" id="inputFirstName">
+          <form class="row form-registration" action="" method="post">
+            <div class="d-flex flex-column justify-content-start align-items-start col-6 box-input">
+              <label class="label-style" for="inputFirstName"> First Name</label>
+              <input class="input__border input__type" type="text" name="inputFirstName" id="inputFirstName" placeholder="Alice">
             </div>
-            <div class="d-flex flex-column justify-content-start align-items-start">
-              <label class="form-label" for="inputLastName"> Last Name</label>
-              <input class="form-control input__border" type="text" name="inputLastName" id="inputLastName">
+            <div class="d-flex flex-column justify-content-start align-items-start col-6 box-input">
+              <label class="label-style" for="inputLastName" placeholder="Miller"> Last Name</label>
+              <input class="input__border input__type" type="text" name="inputLastName" id="inputLastName" placeholder="Miller">
             </div>
-            <div class="d-flex flex-column justify-content-start align-items-start">
-              <label class="form-label" for="selectNationality"> Nationality</label>
-              <select class="form-select input__border" name="selectNationality" id="selectNationality">
-                <option value="American">American </option>
+            <div class="d-flex flex-column justify-content-start align-items-start col-6 box-input">
+              <label class="label-style" for="selectNationality"> Nationality</label>
+              <select class="input__border input__type" name="selectNationality" id="selectNationality">
+                <option value="American" selected>American </option>
                 <option value="Belarusian">Belarusian </option>
                 <option value="Rusian">Rusian</option>
               </select>
             </div>
-            <div class="d-flex flex-column justify-content-start align-items-start">
-              <label class="form-label" for="inputEmail"> E-mail</label>
-              <input class="form-control input__border" type="email" name="inputEmail" id="inputEmail">
+            <div class="d-flex flex-column justify-content-start align-items-start col-6 box-input">
+              <label class="label-style" for="inputEmail"> E-mail</label>
+              <input class="input__border input__type" type="email" name="inputEmail" id="inputEmail" placeholder="alice.miller@yahoo.com">
             </div>
-            <div class="d-flex flex-column justify-content-start align-items-start">
-              <label class="form-label" for="inputBirth"> Date of Birth</label>
-              <div class="d-flex flex-row justify-content-start align-items-start">
-                <select class="form-select input__border" name="selectDayBirth" id="selectDayBirth">
+            <div class="d-flex flex-column justify-content-start align-items-start col-6 box-input">
+              <label class="label-style" for="inputBirth"> Date of Birth</label>
+              <div class="d-flex flex-row justify-content-between align-items-start w-100">
+                <select class="input__border input__type" name="selectDayBirth" id="selectDayBirth">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -65,7 +65,7 @@
                   <option value="18">18</option>
                   <option value="19">19</option>
                   <option value="20">20</option>
-                  <option value="21">21</option>
+                  <option value="21" selected>21</option>
                   <option value="22">22</option>
                   <option value="23">23</option>
                   <option value="24">24</option>
@@ -77,7 +77,7 @@
                   <option value="30">30</option>
                   <option value="31">31</option>
                 </select>
-                <select class="form-select input__border" name="selectMounthBirth" id="selectMounthBirth">
+                <select class="input__border input__type" name="selectMounthBirth" id="selectMounthBirth">
                   <option value="January">January</option>
                   <option value=" February"> February</option>
                   <option value="March">March</option>
@@ -89,10 +89,10 @@
                   <option value="September">September</option>
                   <option value="October">October</option>
                   <option value="November">November</option>
-                  <option value="December">December</option>
+                  <option value="December" selected>December</option>
                 </select>
-                <select class="form-select input__border" name="selectYearBirth" id="selectYearBirth">
-                  <option value="1950">1950</option>
+                <select class="input__border input__border input__type" name="selectYearBirth" id="selectYearBirth">
+                  <option value="1950" selected>1950</option>
                   <option value="1951">1951</option>
                   <option value="1952">1952</option>
                   <option value="1953">1953</option>
@@ -169,28 +169,32 @@
                 </select>
               </div>
             </div>
-            <div class="d-flex flex-column justify-content-start align-items-start">
-              <label class="form-check-label" for="checkGender"> Gender</label>
+            <div class="d-flex flex-column justify-content-start align-items-start col-6 box-input box-select-gender">
+              <label class="label-style" for="checkGender"> Gender</label>
               <div class="d-flex flex-row justify-content-start align-items-start">
-                <div class="d-flex flex-row justify-content-start align-items-start">
-                  <input class="form-check-input" type="radio" name="checkMale" id="checkMale" value="Male">
-                  <label class="form-check-label" for="checkMale"> Male</label>
+                <div class="d-flex flex-row justify-content-center align-items-center">
+                  <input class="input__type" type="radio" name="checkMale" id="checkMale" value="Male" hidden>
+                  <label for="checkMale"> Male</label>
                 </div>
-                <div class="d-flex flex-row justify-content-start align-items-start">
-                  <input class="form-check-input" type="radio" name="checkFemale" id="checkFemale" value="Female">
-                  <label class="form-check-label" for="checkFemale">Female</label>
+                <div class="d-flex flex-row justify-content-center align-items-center">
+                  <input class="input__type" type="radio" name="checkFemale" id="checkFemale" value="Female" hidden>
+                  <label for="checkFemale">Female</label>
                 </div>
               </div>
             </div>
-            <div class="d-flex flex-column justify-content-start align-items-start">
-              <label class="form-label" for="inputPassword"> Password</label>
-              <input class="form-control input__border" type="password" name="inputPassword" id="inputPassword">
+            <div class="d-flex flex-column justify-content-start align-items-start col-6 box-input">
+              <label class="label-style" for="inputPassword"> Password</label>
+              <input class="input__border input__type" type="password" name="inputPassword" id="inputPassword">
             </div>
-            <div class="d-flex flex-column justify-content-start align-items-start">
-              <label class="form-label" for="inputPasswordConfirm"> Confirm Password</label>
-              <input class="form-control input__border" type="password" name="inputPasswordConfirm" id="inputPasswordConfirm">
-            </div><span class="link-login__txt">Have an account? <a class="link-login__link" href="/login">Login</a></span>
-            <button class="btn-submit" type="submit">Complete Signup</button>
+            <div class="d-flex flex-column justify-content-start align-items-start col-6 box-input">
+              <label class="label-style" for="inputPasswordConfirm"> Confirm Password</label>
+              <input class="input__border input__type" type="password" name="inputPasswordConfirm" id="inputPasswordConfirm">
+            </div>
+            <div class="d-flex flex-column justify-content-start align-items-center col-12">
+              <div class="w-100 d-flex justify-content-between martop"><span class="link-login__txt">Have an account? <a class="link-login__link" href="/login">Login</a></span>
+                <button class="btn-submit" type="submit">Complete Signup</button>
+              </div>
+            </div>
           </form>
         </section>
       </main>
